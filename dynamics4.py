@@ -34,7 +34,7 @@ parser.add_argument('--counts_file', type=str, required=True, help='Path to the 
 parser.add_argument('--metadata_file', type=str, required=True, help='Path to the metadata file (phenotypes.tsv)')
 parser.add_argument('--fdr_threshold', type=float, default=0.1, help='FDR threshold for significance')
 parser.add_argument('--min_abs_coeff', type=float, default=0.3, help='Minimum absolute coefficient of change')
-parser.add_argument('--poly_degree', type=int, default=3, help='Degree of polynomial for non-linear regression')
+parser.add_argument('--poly_degree', type=int, default=0, help='Degree of polynomial for non-linear regression')
 parser.add_argument('--output_dir', type=str, required=True, help='Directory to save all results')
 parser.add_argument('--min_fold_change', type=float, default=1.5, help='Minimum fold change between time points')
 parser.add_argument('--min_variance', type=float, default=0.1, help='Minimum variance across samples')
