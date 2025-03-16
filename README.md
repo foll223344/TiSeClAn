@@ -3,8 +3,9 @@ TiSeClAN
 Overview 
 =======
 This script performs comprehensive analysis of gene expression time series data, including data preprocessing, differential expression analysis, clustering, functional enrichment analysis, and various visualizations. The pipeline is designed to identify significant temporal expression patterns and provide biological insights through multiple analysis steps. 
-Requirements 
 
+Requirements 
+=======
     Python 3.8+
     Required libraries:
         pandas
@@ -55,7 +56,7 @@ Usage
 Parameters 
 ==============
 Main Parameters 
-
+**********
     --counts_file: Path to normalized counts file
     --metadata_file: Path to metadata file
     --output_dir: Directory to save results
@@ -65,7 +66,7 @@ Main Parameters
      
 
 Optional Parameters 
-
+******
     --min_fold_change: Minimum fold change between time points (default: 1.5)
     --min_variance: Minimum variance across samples (default: 0.3)
     --additional_filtering: Enable additional filtering by fold change and variance
@@ -82,7 +83,7 @@ Output Files
 The script generates the following outputs in the specified output directory: 
 
 Main Results 
-
+************
     cluster_analysis_filtered.xlsx: Contains: 
         All genes statistics
         Filter information
@@ -95,7 +96,7 @@ Main Results
      
 
 Visualizations 
-
+************
     Cluster profile plots (cluster_X_profiles.png)
     Heatmaps (cluster_X_heatmap.png)
     UMAP projections (umap_projection.png, 3d_umap_projection.html)
@@ -107,7 +108,7 @@ Visualizations
      
 
 Additional Files 
-
+***********
     available_libraries.txt: List of available enrichment databases
      
 
@@ -116,7 +117,7 @@ Analysis Workflow
 Data Preprocessing  
     Normalization using StandardScaler
     Optional smoothing (Savitzky-Golay or moving average)
-         
+    ***********
  Differential Expression Analysis(optional)  
     Polynomial regression modeling
     Multiple testing correction (Benjamini-Hochberg)
